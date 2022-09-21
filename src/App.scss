@@ -1,0 +1,25 @@
+// import font
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// import pages
+@import url("./pages/Home.scss");
+@import url("./pages/SingleGame/singleGame.scss");
+@import url("./pages/Favoris/favoris.scss");
+
+
+// import components
+@import url("./components/Header.scss");
+@import url("./components/LoginSignUpModal/loginsignupmodal.scss");
+@import url("./components/Footer/footer.scss");
+
+
+.App {
+  background-color: #171719;
+  color: white;
+
+  font-family: 'Exo', sans-serif;
+
+  p{
+    margin: 0;
+  }
+}

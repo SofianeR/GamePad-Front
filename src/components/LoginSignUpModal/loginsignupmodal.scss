@@ -1,0 +1,110 @@
+.container-modal{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 65%;
+    height: 65vh;
+
+    position: fixed;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+
+    top: 20%;
+
+   z-index: 1000;
+   background-color: #171719;
+
+
+   border-radius: 5px;
+   opacity: inherit;
+    .left-modal{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1%;
+
+        // flex: 1;
+        height: 100%;
+        width: 50%;
+
+
+        .left-modal-text{
+            display: flex;
+     
+            align-items: center;
+
+            width: 70%;
+
+            p{
+                margin-left: 10%;
+            }
+
+        }
+    }
+    .right-modal{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 95%;
+        width: 50%;
+
+        padding: 1%;
+
+        border-left: solid #ff7b6f 2px;
+
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            width: 100%;
+
+            input{
+                width: 80%;
+                padding: 2%;
+                border-radius: 5px;
+                margin: 2% 0;
+            }
+          
+            #submit-button{
+                width: 85%;
+                padding: 2%;
+                border-radius: 5px;
+                margin: 2% 0;
+                
+                border: none;
+                background-color: #ff7b6f;
+
+                color: white;
+                font-size: 19px;
+                font-weight: bold;
+
+                cursor: pointer;
+            }
+           
+        }
+        span{
+            cursor: pointer;
+            text-align: center;
+        }
+        span:hover{
+            color: #ff7b6f;
+        }
+    }
+
+    .close-modal-container{
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        cursor: pointer;
+    }
+}

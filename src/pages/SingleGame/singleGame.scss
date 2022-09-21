@@ -1,0 +1,322 @@
+.single-game-container{
+    min-height: 90vh;
+    padding: 0 5%;
+    h1{
+        padding: 0;
+        margin: 1%;
+    }
+        
+    .game-information{
+        height: 50vh;
+
+        display: flex;
+        justify-content: center;
+
+
+       .game-image{
+        width: 50%;
+        img{
+            height: 100%;
+            width: 100%;
+            border-radius: 5px;
+        }
+       }
+       .detail-informations{
+           width: 50%;
+           height: 100%;
+
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between;
+
+           padding: 0 2%;
+
+           .add-review-button{
+            display: flex;
+            justify-content: flex-end;
+            cursor: pointer;
+           }
+
+           .detail_container{
+            width: 100%;
+
+            display: flex;
+            justify-content: space-between;
+            
+            #description{
+                // max-height: 10vh;
+                height: 10vh;
+                cursor: pointer;
+            }
+           }
+        .detail{
+            display: flex;
+                p{
+                    // line-height: 1px;
+                    margin: 0 0;
+                    margin-right: 2%;
+                    font-size: small;
+
+                }
+
+           
+
+        }
+        div{
+            flex: 1;
+          }
+       } 
+    }
+    .suggestion-contianer{
+        margin:  5% 0;
+
+        .carrousel-container::-webkit-scrollbar {
+            display: none;
+          }
+        .carrousel-container{
+            display: flex;
+            align-items: center;
+
+            overflow-x: scroll;
+            -ms-overflow-style: none;  
+            scrollbar-width: none;  
+        .game-container{
+                margin: 1% 1%;
+                position: relative;
+        
+                cursor: pointer;
+        
+        }
+            img{
+                width: 15vw;
+                height: 45vh;
+                object-fit: cover;
+
+                border-radius: 5px;        
+
+            }
+
+                     .title-container{
+                        width: 100%;
+                        height: 15%;
+        
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+        
+        
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+        
+                        padding: 3%;
+                            // border: solid red 2Px;
+        
+                        overflow: hidden;
+                        background-color: rgba(33,33,33, 0.7);
+                        p{
+                            
+                            width: 100%;
+                            height: 100%;
+                            
+                        }
+                    }
+
+         
+    }
+}}
+
+.review-container{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        margin: 0;
+    }
+
+    .review-main{
+        width: 70%;
+        .review{
+        padding: 2%;
+        margin: 5%;
+
+        background-color: #424448;
+        border-radius: 8px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h3{
+            margin: 0;
+            border-bottom: white 2px;
+            font-weight: 500;
+            text-decoration-line: underline;
+            text-underline-offset: 3px;
+        }
+        h4{
+            margin: 0;
+
+        }
+        .detail-review{
+            
+            p{
+                margin: 1% 0;
+
+                font-weight: 200;
+                font-size: 15px;
+            }
+        }
+       
+
+        }
+    }
+    .user-information{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-top: 2%;
+
+        .picture-user{
+            display: flex;
+            // justify-content: space-around;
+            align-items: center;
+
+            width: 20%;
+
+            .picture{
+
+              
+                margin-right: 5%;
+               
+                img{
+                    border-radius: 50%;
+                    width: 3vw;
+                    height: 7vh;
+
+                  
+                }
+            }
+        .date-username{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            width: 50%;
+            .date{
+                font-size: 10px;
+                width: 100%;
+           
+            }
+
+
+         
+        }
+
+        }
+    }
+    .rating{
+        width: 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+// modal add review
+.add-review-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    .review-main{
+        width: 70%;
+        .close-div{
+    
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+        }
+        .add-review-card{
+            width: 100%;
+      
+            border-radius: 5px;
+            background-color: #424448;
+
+            padding: 1% ;
+         
+            form{
+                width: 100%;
+                height: 100%;
+
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            
+                .input-container{
+                    width: 85%;
+                    margin: 2% 0;
+                    input{
+                        width: 100%;
+                        
+                        padding: 2% 1%;
+                        border-radius: 5px;
+                        outline: none;
+                        border: none;
+
+                        font-size: 17px;
+                        font-weight: bold;
+                
+                        }
+
+                        textarea{
+                            width: 100%;
+                            padding: 2% 1%;
+                            
+                            border-radius: 5px;
+                            outline: none;
+                            border: none;
+
+                            font-size: 17px;
+                            font-weight: bold;
+                        }
+
+                        p{
+                            font-weight: 200;
+                            margin-bottom: 1%;
+                        }
+                }
+            
+            }
+            .submit-button-container{
+                width: 87%;
+                margin: 2% 0;
+
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                .submit-button{
+                    padding: 1% 4%;
+                    border: none;
+                    border-radius: 5px;
+                    font-weight: bold;
+        
+                    background-color: #ff7b6f;
+                    color: white;
+                }
+            }
+    }
+    }
+}
+

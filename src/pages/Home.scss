@@ -1,0 +1,192 @@
+.home-container{
+
+    position: relative;
+    padding: 0 5%;
+
+    .pagination-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 5% 0;
+        height: 5vh;
+
+        .pagination-block{
+            height: 60%;
+            padding: 0.5% 2%;
+            border: solid #ff7b6f 1px;
+            border-radius: 5px;
+
+            display: flex;
+            align-items: center;
+            cursor:pointer
+            
+        }
+    }
+
+
+}
+.search-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .bar-filter{
+            width: 50%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            // border: solid red 1px;
+
+
+            .search-bar{
+                width: 90%;
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+    
+                background-color: white;
+                border: solid gray 1px;
+                border-radius: 5px;
+                padding: 1.5% ;
+    
+                input{
+                    width: 85%;
+                    height: 100%;
+    
+                    border: none;
+                    outline: none;
+                }
+    
+                .search-icon{
+                    cursor: pointer;
+                }
+
+            }
+        }
+        .filter-container{
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+
+            h4{
+                margin: 0;
+                cursor: pointer;
+            }
+            .order-container{
+            // max-width: 100%;
+                    .active{
+                        width: 60vw;
+                        display: flex;
+                        // flex-direction: column;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+    
+                        flex: 1;
+
+                        background-color: #171719;
+
+                        position: relative;
+                        z-index: 1000;
+                        p{
+                      cursor: pointer;
+                        }
+                    }
+            }
+            .arrayFilter-container{
+    
+                overflow: hidden;
+                margin: 0 3%;
+
+          
+                    .active{
+                    flex: 1;
+
+
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        
+
+                        background-color: #171719;
+
+                        position: relative;
+                        z-index: 1000;
+
+                        .filter{
+                            display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        
+                        }
+                    }
+            }
+           
+        }
+
+    }
+
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // align-items: center;
+
+    min-height: 100vh;
+
+    margin-top: 2%;
+
+    .game-container{
+        width: 17%;
+        height: 250px;
+        // border: solid red 2px;
+
+        margin: 1% 0;
+        position: relative;
+
+        cursor: pointer;
+   
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .favoris-label-container{
+                position: absolute;
+
+                top: 2%;
+                right: 5%;
+            }
+            .title-container{
+                width: 100%;
+                height: 15%;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+                position: absolute;
+                bottom: 0;
+                left: 0;
+
+                padding: 3%;
+                    // border: solid red 2Px;
+
+                overflow: hidden;
+                background-color: rgba(33,33,33, 0.7);
+                p{
+                    
+                    width: 100%;
+                    height: 100%;
+                    
+                }
+            }
+    }
+}
