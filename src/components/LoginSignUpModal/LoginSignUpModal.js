@@ -33,7 +33,8 @@ const LoginSignUpModal = ({ modalLogin, setModalLogin, connexion }) => {
         checkPasswordSignUp
       ) {
         if (passwordSignUp === checkPasswordSignUp) {
-          const url_server = "http://localhost:3000/user/signup";
+          // const url_server = "http://localhost:3000/user/signup";
+          const url_server = "https://gamepad-sr.herokuapp.com/user/signup";
 
           const response = await axios.post(url_server, {
             username: userNameSignUp,
@@ -65,7 +66,8 @@ const LoginSignUpModal = ({ modalLogin, setModalLogin, connexion }) => {
     setErrorMessage("");
 
     try {
-      const url_server = "http://localhost:3000/user/login";
+      // const url_server = "http://localhost:3000/user/login";
+      const url_server = "https://gamepad-sr.herokuapp.com/user/login";
 
       const response = await axios.post(url_server, {
         mail: mailLogin,

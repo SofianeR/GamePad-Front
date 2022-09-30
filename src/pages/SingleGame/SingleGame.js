@@ -62,7 +62,8 @@ const SingleGame = ({
       setGamesSuggestion(responseSuggestionData.data.results);
 
       // fetch review for game
-      url_server = `http://localhost:3000/review/read/${id}`;
+      // url_server = `http://localhost:3000/review/read/${id}`;
+      url_server = `https://gamepad-sr.herokuapp.com/review/read/${id}`;
 
       const responseGetReview = await axios.post(url_server);
 
@@ -70,7 +71,8 @@ const SingleGame = ({
         const arrayState = [];
         const promise = responseGetReview.data.result.reviews.map(
           async (review) => {
-            let promise_url_server = `http://localhost:3000/user/read/${review.userToken}`;
+            // let promise_url_server = `http://localhost:3000/user/read/${review.userToken}`;
+            let promise_url_server = `https://gamepad-sr.herokuapp.com/user/read/${review.userToken}`;
 
             const response = await axios.post(promise_url_server);
 
@@ -120,7 +122,8 @@ const SingleGame = ({
     setErrorMessage("");
 
     try {
-      const url_server = "http://localhost:3000/user/favoris/add";
+      // const url_server = "http://localhost:3000/user/favoris/add";
+      const url_server = "https://gamepad-sr.herokuapp.com/user/favoris/add";
 
       const response = await axios.post(url_server, {
         game: {
@@ -163,7 +166,8 @@ const SingleGame = ({
     setIsLoading(true);
     setErrorMessage("");
     try {
-      const url_server = "http://localhost:3000/review/add";
+      // const url_server = "http://localhost:3000/review/add";
+      const url_server = "https://gamepad-sr.herokuapp.com/review/add";
 
       const responseAddReview = await axios.post(url_server, {
         token,
@@ -190,7 +194,8 @@ const SingleGame = ({
 
   const ratingsReview = async (ratingValue, reviewId, note) => {
     try {
-      const url_server = `http://localhost:3000/review/rating`;
+      // const url_server = `http://localhost:3000/review/rating`;
+      const url_server = "https://gamepad-sr.herokuapp.com/review/rating";
 
       const response = await axios.post(url_server, {
         reviewId,

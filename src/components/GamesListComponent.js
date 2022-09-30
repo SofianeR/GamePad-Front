@@ -26,7 +26,8 @@ const GamesListComponent = ({
     console.log(favorisCopy);
 
     setFavoris(favorisCopy);
-    const url_server = "http://localhost:3000/user/favoris/delete";
+    // const url_server = "http://localhost:3000/user/favoris/delete";
+    const url_server = "https://gamepad-sr.herokuapp.com/user/favoris/delete";
 
     const response = await axios.post(url_server, {
       favoris: favorisCopy,

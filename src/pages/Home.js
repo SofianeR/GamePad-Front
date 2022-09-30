@@ -77,7 +77,7 @@ const Home = ({ modalLogin, setModalLogin }) => {
     if (copyStateQuery.length > 0) {
       setIsLoading(true);
       try {
-        const url_server = `https://api.rawg.io/api/games?${queryParameter}=${copyStateQuery.join(
+        const url_server = `https://api.rawg.io/api/games?search_exact=true&${queryParameter}=${copyStateQuery.join(
           ","
         )}&key=${process.env.REACT_APP_API_KEY}`;
 
