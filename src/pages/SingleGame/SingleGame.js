@@ -118,7 +118,7 @@ const SingleGame = ({
 
   const addFavoris = async (event) => {
     event.preventDefault();
-    setIsLoading(true);
+    // setIsLoading(true);
     setErrorMessage("");
 
     try {
@@ -189,6 +189,7 @@ const SingleGame = ({
       // console.log(responseAddReview.data);
     } catch (error) {
       setErrorMessage(error.message);
+      setIsLoading(false);
     }
   };
 
